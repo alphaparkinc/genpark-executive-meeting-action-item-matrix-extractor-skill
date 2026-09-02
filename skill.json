@@ -1,0 +1,39 @@
+{
+  "name": "genpark-executive-meeting-action-item-matrix-extractor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Executive meeting action item matrix extractor transforming meeting transcripts into owner accountability matrices.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "meeting-intelligence",
+  "tags": [
+    "meeting-notes",
+    "action-items",
+    "granola-style",
+    "accountability-matrix",
+    "task-extraction"
+  ],
+  "inputs": {
+    "meeting_transcript_text": {
+      "type": "string"
+    },
+    "meeting_context_title": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "meeting_extraction_id": {
+      "type": "string"
+    },
+    "extracted_action_items": {
+      "type": "array"
+    },
+    "decisions_recorded_count": {
+      "type": "integer"
+    },
+    "accountability_matrix_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
